@@ -25,7 +25,7 @@ public class HomeController {
 	@RequestMapping(path="/success",method = RequestMethod.POST)
 	public String success(@ModelAttribute User user,@RequestParam(name = "repassword") String repass) {
 		User userdata=this.services.getUser(user.getEmail());
-		if(user.getEmail().isBlank() || !user.getPassword().equals(repass) || userdata!=null) {
+		if(user.getEmail().isEmpty() || !user.getPassword().equals(repass) || userdata!=null) {
 			return "redirect:/signin";
 		}
 		//logic to save user to database
