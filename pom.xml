@@ -8,8 +8,9 @@
   <name>registration Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <java.version>11</java.version>
-</properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
   <dependencies>
   
   	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
